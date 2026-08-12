@@ -1,35 +1,49 @@
 # Python Code Review Samples
 
-Welcome to the repository with my code reviews of python code examples
+Welcome to my repository of Python code reviews.
 
-There are three types of files:
+## Contents
 
-examples
+There are three main directories:
 
-reviews
+- `examples/`
+- `reviews/`
+- `fixed/`
 
-fixed
+### examples/
 
-examples
+This directory contains Python code examples that were submitted for
+review. Most of them have issues: some have anti-patterns, some have
+bugs, and some have security vulnerabilities.
 
-This directory contains Python code examples that were asked for review
+### reviews/
 
-Most of them have some issues. Some of them have anti-patterns  Some have bugs or potential security issues.
+This directory contains the reviews themselves. Each review documents
+the issues found during the review of the corresponding example in
+`examples/`.
 
-reviews
+### fixed/
 
-This directory contains the reviews of the examples.
+This directory contains the fixed versions of the examples from
+`examples/`. These represent production-ready versions of the reviewed
+code.
 
-The review documents the issues found during the review of the example in the examples directory
+## Index
 
-fixed
+| # | Example | Topic | Main issues |
+|---|---------|-------|-------------|
+| 01 | `01_insecure_login.py` | Authentication | SQL injection, plaintext passwords, hardcoded credentials |
+| 02 | `02_buggy_data_processor.py` | Data processing | Silent failures, mutable default args, no validation |
+| 03 | `03_buggy_file_handler.py` | File handling | Path traversal, unclosed files, no error handling |
 
-This directory contains the fixed version of the examples from the examples/ directory
+## Why this repository?
 
-These are the production-ready versions of the reviewed code snippets
+The repository was created to showcase my code review skills.
 
-Why this repository?
-
-The repository was created to showcase my code review skills
-
-By reviewing the code examples, you get a chance to see my Python expertise. You can judge my code review skills: how well I can find bugs in the code, security issues, and code smells; how good my understanding is of code quality, code conventions, and Python-specific best practices (PEP8). By looking at the reviews and especially at the comparison between examples/ and fixed/ you can also see my writing skills: how I explain things in English, how I structure the code reviews to make them easy to follow and understand.
+By reviewing the code examples, you get a chance to see my Python
+expertise. You can judge how well I find bugs, security issues, and
+code smells. You can also see my understanding of code quality, code
+conventions, and Python-specific best practices (PEP 8). By comparing
+`examples/` with `fixed/`, and reading through `reviews/`, you can see
+my writing skills: how I explain issues in English, and how I
+structure reviews to make them easy to follow.
